@@ -1,5 +1,6 @@
 import React from "react";
 import { useLanguage } from "@/lib/LanguageContext";
+import Logo from "@/components/Logo";
 import { 
   Phone, 
   MapPin, 
@@ -50,9 +51,7 @@ export default function Home() {
       <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-border shadow-sm">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="font-bold text-primary text-lg md:text-xl tracking-tight flex items-center gap-2 cursor-pointer" onClick={() => scrollTo('hero')}>
-            <div className="w-8 h-8 bg-primary rounded flex items-center justify-center text-white">
-              NP
-            </div>
+            <Logo size={40} />
             <span className="hidden sm:inline">Narayan Paranjape</span>
           </div>
           
