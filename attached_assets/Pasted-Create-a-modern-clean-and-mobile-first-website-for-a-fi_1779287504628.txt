@@ -1,0 +1,109 @@
+Create a modern, clean, and mobile-first website for a financial services advisor representing:
+Client Name: Mr. Narayan Paranjape
+Role: Retired Class 1 Govt. Officer (FDCM), Advisor & Expert Patron
+Organization: Tirumalla Tirupati Multistate Co‑operative Credit Society Ltd. (Ballarpur Branch)
+
+🎯 Goal:
+Design a trust-building, simple, and professional website to increase local business inquiries and FD investments.
+
+🌐 Key Requirements:
+
+Fully mobile-friendly (responsive design)
+Bilingual support: English + Marathi (toggle option)
+Simple, clean UI with minimal clutter
+Fast loading and easy navigation for local users
+
+
+🎨 Design Style:
+
+Soft professional colors (blue, white, light gold accents)
+Clean typography (easy-to-read fonts)
+Card-based sections with icons
+Focus on trust, credibility, and simplicity
+
+
+📄 Pages & Sections:
+1. Home Page
+
+Welcome message
+Quick intro of Mr. Narayan Paranjape
+Highlights of services
+CTA buttons: “Invest Now”, “Contact on WhatsApp”
+
+
+2. About Section
+
+Professional background
+Experience and credibility
+Association with society
+
+
+3. Investment Plans (FD Rates)
+Display clearly in table/cards:
+
+12 months – 10.00%
+24 months – 10.50%
+36 months – 11.50%
+60 months – 12.50%
+✅ Highlight: Special benefits for Women & Senior Citizens
+
+
+4. Benefits Section
+
+Safe and reliable investment
+High returns
+Personalized advisory
+Trusted local presence
+
+
+5. Success Stories
+
+2–3 anonymized case studies
+Short testimonial-style content
+
+
+6. Referral Program
+
+Explanation of referral code system
+Encourage sharing
+
+
+7. Contact Section
+
+Phone number (click-to-call)
+WhatsApp button (primary CTA)
+Address: Ballarpur Branch
+
+
+🤖 Optional Features:
+
+Chatbot for basic queries (experimental)
+WhatsApp integration for instant communication
+
+
+💼 Business Enhancements:
+
+Custom email ID setup
+WhatsApp business promotion integration
+
+
+💰 Pricing Info Section (Optional Display):
+
+Development Cost: ₹5,000 (one-time)
+Hosting Cost: ₹200/month
+
+
+🔧 Technical Notes:
+
+Lightweight website (fast loading on 4G/mobile networks)
+SEO optimized for local search (Ballarpur, FD investment)
+Simple admin/edit capability for updating rates
+
+
+🎯 Final Feel:
+The website should feel:
+✅ Trustworthy
+✅ Simple
+✅ Local-friendly
+✅ Easy to use for non-technical users
+✅ Conversion-focused (calls & WhatsApp inquiries)
