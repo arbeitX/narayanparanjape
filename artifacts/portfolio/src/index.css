@@ -122,3 +122,9 @@
     scroll-behavior: smooth;
   }
 }
+
+#replit-badge,
+[id^="replit"],
+iframe[src*="replit.com/badge"] {
+  display: none !important;
+}
