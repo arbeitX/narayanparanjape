@@ -1,6 +1,7 @@
 import React from "react";
 import { useLanguage } from "@/lib/LanguageContext";
 import Logo from "@/components/Logo";
+import paranjapePhoto from "../assets/paranjape-photo.jpg";
 import { 
   Phone, 
   MapPin, 
@@ -129,15 +130,12 @@ export default function Home() {
           <div className="container mx-auto max-w-5xl">
             <div className="flex flex-col md:flex-row gap-12 items-center">
               <div className="md:w-1/3">
-                <div className="aspect-[3/4] rounded-2xl bg-primary/10 border-8 border-white shadow-xl relative overflow-hidden flex items-center justify-center">
-                   {/* Placeholder for Photo */}
-                   <div className="text-center p-6">
-                     <div className="w-24 h-24 bg-primary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                       <Briefcase className="w-10 h-10 text-primary" />
-                     </div>
-                     <p className="text-primary font-bold text-xl">Mr. N. Paranjape</p>
-                     <p className="text-sm text-foreground/60 mt-2">Class 1 Officer (Retd.)</p>
-                   </div>
+                <div className="aspect-[3/4] rounded-2xl border-8 border-white shadow-xl relative overflow-hidden">
+                  <img
+                    src={paranjapePhoto}
+                    alt="Mr. Narayan Paranjape"
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
               </div>
               <div className="md:w-2/3">
