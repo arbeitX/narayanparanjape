@@ -35,7 +35,7 @@ const staggerContainer = {
 };
 
 export default function Home() {
-  const { t, language, toggleLanguage } = useLanguage();
+  const { t, language, setLanguage } = useLanguage();
 
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
@@ -64,14 +64,21 @@ export default function Home() {
               <button onClick={() => scrollTo('benefits')} className="hover:text-primary transition-colors">{t('nav.benefits')}</button>
               <button onClick={() => scrollTo('contact')} className="hover:text-primary transition-colors">{t('nav.contact')}</button>
             </div>
-            <button 
-              onClick={toggleLanguage}
-              className="px-3 py-1.5 rounded-full bg-secondary/20 text-primary font-semibold text-sm hover:bg-secondary/30 transition-colors border border-secondary/30 flex items-center gap-2"
-            >
-              <span className={language === 'en' ? 'text-primary' : 'text-primary/50'}>EN</span>
-              <span className="text-primary/30">|</span>
-              <span className={language === 'mr' ? 'text-primary' : 'text-primary/50'}>मराठी</span>
-            </button>
+            <div className="flex items-center rounded-full border border-secondary/30 overflow-hidden text-sm font-semibold">
+              {(["en", "mr", "hi"] as const).map((lang, i) => (
+                <button
+                  key={lang}
+                  onClick={() => setLanguage(lang)}
+                  className={`px-2.5 py-1.5 transition-colors ${
+                    language === lang
+                      ? "bg-primary text-white"
+                      : "text-primary/60 hover:text-primary hover:bg-secondary/20"
+                  } ${i > 0 ? "border-l border-secondary/30" : ""}`}
+                >
+                  {lang === "en" ? "EN" : lang === "mr" ? "मराठी" : "हिंदी"}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </nav>
