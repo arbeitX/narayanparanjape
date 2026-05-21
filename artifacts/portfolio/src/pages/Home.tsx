@@ -129,8 +129,8 @@ export default function Home() {
         <section id="about" className="py-20 bg-white px-4 border-y border-border/50">
           <div className="container mx-auto max-w-5xl">
             <div className="flex flex-col md:flex-row gap-12 items-center">
-              <div className="md:w-1/3">
-                <div className="aspect-[3/4] rounded-2xl border-8 border-white shadow-xl relative overflow-hidden">
+              <div className="md:w-1/3 flex justify-center">
+                <div className="w-48 md:w-full aspect-[3/4] rounded-2xl border-8 border-white shadow-xl relative overflow-hidden">
                   <img
                     src={paranjapePhoto}
                     alt="Mr. Narayan Paranjape"
