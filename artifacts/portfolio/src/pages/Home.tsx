@@ -46,6 +46,7 @@ export default function Home() {
   };
 
   const whatsappUrl = "https://wa.me/919226892222";
+  const ecopyWhatsappUrl = "https://wa.me/919226892222?text=" + encodeURIComponent("Namaste Mr. Paranjape, I would like to request a free e-copy of your book \"Aavahan Marathi Kavya Sangrah\". Please share it with me. Thank you.");
   const websiteUrl = "https://ttmscredit.co.in/";
 
   return (
@@ -349,7 +350,7 @@ export default function Home() {
                         </div>
                       </div>
                       <a
-                        href={whatsappUrl}
+                        href={ecopyWhatsappUrl}
                         target="_blank"
                         rel="noreferrer"
                         className="mt-4 w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-[#25D366] text-white rounded-lg font-semibold text-sm hover:bg-[#20b858] transition-colors"
