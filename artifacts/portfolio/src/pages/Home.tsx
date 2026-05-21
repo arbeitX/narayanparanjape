@@ -158,78 +158,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Literary Works Section */}
-        <section id="poetry" className="py-20 bg-background px-4">
-          <div className="container mx-auto max-w-5xl">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-80px" }}
-              variants={staggerContainer}
-            >
-              <motion.div variants={fadeUp} className="text-center mb-12">
-                <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100 text-amber-800 text-sm font-semibold mb-4 border border-amber-200">
-                  <BookOpen className="w-4 h-4" />
-                  {t('poetry.badge')}
-                </span>
-                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">{t('poetry.title')}</h2>
-                <p className="text-lg text-foreground/70 max-w-2xl mx-auto">{t('poetry.subtitle')}</p>
-              </motion.div>
-
-              <div className="grid md:grid-cols-2 gap-8 items-start">
-                {/* Book info card */}
-                <motion.div variants={fadeUp} className="bg-white rounded-2xl border border-border shadow-sm overflow-hidden">
-                  <div className="bg-gradient-to-br from-primary to-primary/80 p-8 flex flex-col items-center text-center">
-                    <div className="w-20 h-20 bg-white/10 rounded-2xl flex items-center justify-center mb-4 border border-white/20">
-                      <BookOpen className="w-10 h-10 text-amber-300" />
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-1">{t('poetry.book')}</h3>
-                    <p className="text-white/60 text-sm">by Mr. Narayan Paranjape</p>
-                  </div>
-                  <div className="p-6">
-                    <p className="text-foreground/75 leading-relaxed mb-6">{t('poetry.bookdesc')}</p>
-                    <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
-                      <div className="flex items-start gap-3">
-                        <Mail className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
-                        <div>
-                          <p className="font-semibold text-amber-800 text-sm mb-1">{t('poetry.ecopy')}</p>
-                          <p className="text-amber-700/80 text-xs leading-relaxed">{t('poetry.ecopy.desc')}</p>
-                        </div>
-                      </div>
-                      <a
-                        href={whatsappUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="mt-4 w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-[#25D366] text-white rounded-lg font-semibold text-sm hover:bg-[#20b858] transition-colors"
-                      >
-                        <MessageCircle className="w-4 h-4" />
-                        {t('poetry.ecopy')}
-                      </a>
-                    </div>
-                  </div>
-                </motion.div>
-
-                {/* YouTube embed */}
-                <motion.div variants={fadeUp} className="flex flex-col gap-4">
-                  <p className="text-sm font-semibold text-foreground/60 uppercase tracking-wide">{t('poetry.video')}</p>
-                  <div className="relative w-full rounded-2xl overflow-hidden shadow-lg border border-border bg-black" style={{ paddingTop: '56.25%' }}>
-                    <iframe
-                      className="absolute inset-0 w-full h-full"
-                      src="https://www.youtube.com/embed/ckHwxAefQKo?rel=0&modestbranding=1"
-                      title="Aavahan Marathi Kavya Sangrah — First Poem"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
-                  </div>
-                  <p className="text-xs text-foreground/50 text-center">
-                    "Aavahan Marathi Kavya Sangrah" — a journey through words and culture
-                  </p>
-                </motion.div>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
         {/* Investment Plans Section */}
         <section id="plans" className="py-20 bg-white px-4 border-t border-border">
           <div className="container mx-auto max-w-4xl">
@@ -374,6 +302,78 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Literary Works Section */}
+        <section id="poetry" className="py-20 bg-background px-4 border-t border-border">
+          <div className="container mx-auto max-w-5xl">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              variants={staggerContainer}
+            >
+              <motion.div variants={fadeUp} className="text-center mb-12">
+                <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100 text-amber-800 text-sm font-semibold mb-4 border border-amber-200">
+                  <BookOpen className="w-4 h-4" />
+                  {t('poetry.badge')}
+                </span>
+                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">{t('poetry.title')}</h2>
+                <p className="text-lg text-foreground/70 max-w-2xl mx-auto">{t('poetry.subtitle')}</p>
+              </motion.div>
+
+              <div className="grid md:grid-cols-2 gap-8 items-start">
+                {/* Book info card */}
+                <motion.div variants={fadeUp} className="bg-white rounded-2xl border border-border shadow-sm overflow-hidden">
+                  <div className="bg-gradient-to-br from-primary to-primary/80 p-8 flex flex-col items-center text-center">
+                    <div className="w-20 h-20 bg-white/10 rounded-2xl flex items-center justify-center mb-4 border border-white/20">
+                      <BookOpen className="w-10 h-10 text-amber-300" />
+                    </div>
+                    <h3 className="text-xl font-bold text-white mb-1">{t('poetry.book')}</h3>
+                    <p className="text-white/60 text-sm">by Mr. Narayan Paranjape</p>
+                  </div>
+                  <div className="p-6">
+                    <p className="text-foreground/75 leading-relaxed mb-6">{t('poetry.bookdesc')}</p>
+                    <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
+                      <div className="flex items-start gap-3">
+                        <Mail className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-amber-800 text-sm mb-1">{t('poetry.ecopy')}</p>
+                          <p className="text-amber-700/80 text-xs leading-relaxed">{t('poetry.ecopy.desc')}</p>
+                        </div>
+                      </div>
+                      <a
+                        href={whatsappUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-4 w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-[#25D366] text-white rounded-lg font-semibold text-sm hover:bg-[#20b858] transition-colors"
+                      >
+                        <MessageCircle className="w-4 h-4" />
+                        {t('poetry.ecopy')}
+                      </a>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* YouTube embed */}
+                <motion.div variants={fadeUp} className="flex flex-col gap-4">
+                  <p className="text-sm font-semibold text-foreground/60 uppercase tracking-wide">{t('poetry.video')}</p>
+                  <div className="relative w-full rounded-2xl overflow-hidden shadow-lg border border-border bg-black" style={{ paddingTop: '56.25%' }}>
+                    <iframe
+                      className="absolute inset-0 w-full h-full"
+                      src="https://www.youtube.com/embed/ckHwxAefQKo?rel=0&modestbranding=1"
+                      title="Aavahan Marathi Kavya Sangrah — First Poem"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                  <p className="text-xs text-foreground/50 text-center">
+                    "Aavahan Marathi Kavya Sangrah" — a journey through words and culture
+                  </p>
+                </motion.div>
+              </div>
+            </motion.div>
           </div>
         </section>
       </main>
