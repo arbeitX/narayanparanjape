@@ -44,7 +44,7 @@ export default function Home() {
     }
   };
 
-  const whatsappUrl = "https://wa.me/919876543210";
+  const whatsappUrl = "https://wa.me/919226892222";
   const websiteUrl = "https://ttmscredit.co.in/";
 
   return (
@@ -271,12 +271,12 @@ export default function Home() {
             <p className="text-lg text-foreground/70 mb-10">{t('contact.desc')}</p>
             
             <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto mb-12">
-              <a href="tel:+919876543210" className="flex flex-col items-center justify-center p-8 bg-background border border-border rounded-2xl hover:shadow-md transition-shadow group">
+              <a href="tel:+919226892222" className="flex flex-col items-center justify-center p-8 bg-background border border-border rounded-2xl hover:shadow-md transition-shadow group">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <Phone className="w-8 h-8 text-primary" />
                 </div>
                 <h3 className="font-bold text-xl text-primary mb-1">{t('contact.phone')}</h3>
-                <p className="text-foreground/60">+91 98765 43210</p>
+                <p className="text-foreground/60">+91 92268 92222</p>
               </a>
               
               <a href={whatsappUrl} target="_blank" rel="noreferrer" className="flex flex-col items-center justify-center p-8 bg-background border border-border rounded-2xl hover:shadow-md transition-shadow group">
@@ -284,7 +284,7 @@ export default function Home() {
                   <MessageCircle className="w-8 h-8 text-[#25D366]" />
                 </div>
                 <h3 className="font-bold text-xl text-[#25D366] mb-1">{t('contact.whatsapp')}</h3>
-                <p className="text-foreground/60">+91 98765 43210</p>
+                <p className="text-foreground/60">+91 92268 92222</p>
               </a>
             </div>
             
