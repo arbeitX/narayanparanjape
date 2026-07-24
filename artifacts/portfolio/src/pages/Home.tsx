@@ -182,7 +182,7 @@ export default function Home() {
                 {[
                   { duration: t('plans.months12'), rate: "10.00% p.a." },
                   { duration: t('plans.months24'), rate: "10.50% p.a." },
-                  { duration: t('plans.months36'), rate: "11.50% p.a." }
+                  { duration: t('plans.months36'), rate: "11.00% p.a." }
                 ].map((plan, i) => (
                   <div key={i} className="grid grid-cols-2 p-5 text-lg items-center hover:bg-slate-50 transition-colors">
                     <div className="font-medium">{plan.duration}</div>
@@ -199,8 +199,15 @@ export default function Home() {
                       {t('plans.best')}
                     </span>
                   </div>
-                  <div className="text-right font-black text-2xl text-primary">12.50% p.a.</div>
+                  <div className="text-right font-black text-2xl text-primary">11.50% p.a.</div>
                 </div>
+              </div>
+            </div>
+
+            <div className="bg-secondary/10 border border-secondary/30 rounded-xl p-4 flex items-start gap-3 mb-6">
+              <TrendingUp className="w-6 h-6 text-primary shrink-0 mt-0.5" />
+              <div>
+                <p className="font-semibold text-primary">{t('plans.double')}</p>
               </div>
             </div>
 
